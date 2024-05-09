@@ -34,7 +34,7 @@ pipeline {
 
                 sh 'docker run -d --name flask-app --network new-network flask-app:latest'
 
-                sh 'docker run -d -p 80:80 --name mynginx --network new-network mynginx:latest'
+                sh 'docker run -d -p 5500 --name mynginx --network new-network mynginx:latest'
 
             }
 
